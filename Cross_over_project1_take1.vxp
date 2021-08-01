@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--VituixCAD PROJECT FILE-->
+<SPEAKER>
+  <Description></Description>
+  <ReferenceAngle>0</ReferenceAngle>
+  <PeakNotchAna>True</PeakNotchAna>
+  <BesselPhase>False</BesselPhase>
+  <SPLTarget>
+    <HzLow>71.0</HzLow>
+    <dBLow>90.8</dBLow>
+    <HzHigh>15000.0</HzHigh>
+    <dBHigh>88.0</dBHigh>
+  </SPLTarget>
+  <PowerTarget>
+    <HzLow>200.0</HzLow>
+    <dBLow>95.0</dBLow>
+    <HzHigh>12000.0</HzHigh>
+    <dBHigh>89.0</dBHigh>
+  </PowerTarget>
+  <WAY wi="0">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>True</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>tangbang</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>Woofer\</ResponseFile>
+      <ImpedanceFile>Woofer\tangbang_zma.txt</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>tangbang_frd.txt</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+  </WAY>
+  <WAY wi="1">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>False</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>PS95</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>Full-range\295-349--Dayton-Audio-PS95-8_data\FRD\</ResponseFile>
+      <ImpedanceFile>Full-range\295-349--Dayton-Audio-PS95-8_data\ZMA\PS95-8.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>PS95-8@0.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+      <RESPONSE ri="1">
+        <FileHeader>PS95-8@15.frd</FileHeader>
+        <Hor>15</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+      <RESPONSE ri="2">
+        <FileHeader>PS95-8@30.frd</FileHeader>
+        <Hor>30</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+      <RESPONSE ri="3">
+        <FileHeader>PS95-8@45.frd</FileHeader>
+        <Hor>45</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive (R1+L1) || R2</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>1.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="1">
+        <Name>L1</Name>
+        <Value>1.000</Value>
+        <Unit>mH</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="3">
+        <Name>R2</Name>
+        <Value>10.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Active Peak/Notch</FilterType>
+      <Shape>Parametric EQ</Shape>
+      <Order>0</Order>
+      <Connection></Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="7">
+        <Name>A</Name>
+        <Value>-5.000</Value>
+        <Unit>dB</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="9">
+        <Name>f1</Name>
+        <Value>268.000</Value>
+        <Unit>Hz</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="10">
+        <Name>Q1</Name>
+        <Value>0.707</Value>
+        <Unit></Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="2">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>True</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>Rs100</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>Full-range\295-378--Dayton-Audio-RS100-4_data\FRD\</ResponseFile>
+      <ImpedanceFile>Full-range\295-378--Dayton-Audio-RS100-4_data\ZMA\RS100-4.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>RS100-4@0.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+      <RESPONSE ri="1">
+        <FileHeader>RS100-4@15.frd</FileHeader>
+        <Hor>15</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+      <RESPONSE ri="2">
+        <FileHeader>RS100-4@30.frd</FileHeader>
+        <Hor>30</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+      <RESPONSE ri="3">
+        <FileHeader>RS100-4@45.frd</FileHeader>
+        <Hor>45</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Active Peak/Notch</FilterType>
+      <Shape>Parametric EQ</Shape>
+      <Order>0</Order>
+      <Connection></Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="7">
+        <Name>A</Name>
+        <Value>-2.500</Value>
+        <Unit>dB</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="9">
+        <Name>f1</Name>
+        <Value>2925.000</Value>
+        <Unit>Hz</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="10">
+        <Name>Q1</Name>
+        <Value>0.707</Value>
+        <Unit></Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Active Peak/Notch</FilterType>
+      <Shape>Parametric EQ</Shape>
+      <Order>0</Order>
+      <Connection></Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="7">
+        <Name>A</Name>
+        <Value>1.800</Value>
+        <Unit>dB</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="9">
+        <Name>f1</Name>
+        <Value>8150.000</Value>
+        <Unit>Hz</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+      <PARAMETER pi="10">
+        <Name>Q1</Name>
+        <Value>0.707</Value>
+        <Unit></Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="3">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>False</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name></Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile></ResponseFile>
+      <ImpedanceFile></ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+    </DRIVER>
+  </WAY>
+  <WAY wi="4">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>False</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name></Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile></ResponseFile>
+      <ImpedanceFile></ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+    </DRIVER>
+  </WAY>
+  <WAY wi="5">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>False</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name></Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile></ResponseFile>
+      <ImpedanceFile></ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+    </DRIVER>
+  </WAY>
+</SPEAKER>
